@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity Web Player | SampleGame</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <div id="splash-overlay">
+      <div id="splash-controls">
+        <div id="unity-loading-bar">
+          <div id="unity-progress-bar-container">
+            <div id="unity-progress-bar-full-container"></div>
+          </div>
+        </div>
+        <img id="tap-to-start" src="TemplateData/tap-message.png" alt="tap to start">
+      </div>
+    </div>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-warning"> </div>
+
+    </div>
+    <script type="module" src="script.ts"></script>
+  </body>
+</html>

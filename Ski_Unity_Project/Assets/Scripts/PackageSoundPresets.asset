@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c8c699e35b7c0459d0e60d2a09edc0, type: 3}
+  m_Name: PackageSoundPresets
+  m_EditorClassIdentifier: Assembly-CSharp::ForevrTools.Audio.ProceduralSoundPresets
+  presets:
+  - name: Powerup
+    category: Powerup
+    parameters:
+      waveform: 0
+      baseFrequency: 527.7836
+      frequencySlide: 515.3308
+      frequencyDeltaSlide: 0
+      attackTime: 0.012049956
+      decayTime: 0.167254
+      sustainLevel: 0.6723362
+      releaseTime: 0.23546696
+      duration: 0.79485065
+      vibratoRate: 13.671462
+      vibratoDepth: 0.15627421
+      vibratoDelay: 0
+      tremoloRate: 0
+      tremoloDepth: 0
+      bitCrush: 0
+      volume: 0.4794587
+  - name: Powerup2
+    category: Powerup
+    parameters:
+      waveform: 0
+      baseFrequency: 442.9927
+      frequencySlide: 935.6675
+      frequencyDeltaSlide: 0
+      attackTime: 0.026227491
+      decayTime: 0.18093622
+      sustainLevel: 0.45714322
+      releaseTime: 0.31687889
+      duration: 0.7314627
+      vibratoRate: 12.641397
+      vibratoDepth: 0.14627455
+      vibratoDelay: 0
+      tremoloRate: 0
+      tremoloDepth: 0
+      bitCrush: 0
+      volume: 0.5330695

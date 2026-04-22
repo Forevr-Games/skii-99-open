@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@400;600;700&display=swap");
+
+:root {
+  color-scheme: light;
+  --sky-blue: #4dd2ff;
+  --snow-white: #ffffff;
+  --ice-blue: #a8e6ff;
+  --sunny-yellow: #ffcf40;
+  --forest-green: #2d9a5f;
+  --deep-blue: #0066cc;
+  --pink-accent: #ff6b9d;
+  --purple-shadow: #7b2cbf;
+  --snow-shadow: rgba(168, 230, 255, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  color: #1a1a2e;
+  background: url('../background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 20%),
+    radial-gradient(circle at 80% 60%, rgba(255, 200, 0, 0.15) 0%, transparent 25%),
+    radial-gradient(circle at 40% 70%, rgba(255, 50, 150, 0.1) 0%, transparent 20%);
+  pointer-events: none;
+}
+
+.app {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-height: 90vh;
+  padding: 32px 24px;
+  animation: bounce-in 400ms ease-out both;
+  overflow-y: auto;
+}
+
+
+
+.title {
+  width: clamp(180px, 50%, 330px);
+  height: auto;
+  display: block;
+  filter: drop-shadow(3px 3px 0 #ff6b9d) drop-shadow(6px 6px 0 #ffcc00) drop-shadow(9px 9px 20px rgba(0, 0, 0, 0.3));
+  animation: title-bounce 3s ease-in-out infinite;
+  transition: transform 100ms ease;
+}
+
+.title.shake {
+  animation: logo-shake 400ms cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.challenge-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  color: #1a1a2e;
+  font-size: 1.05rem;
+  background: #ffe033;
+  border: 3px solid #ff6b9d;
+  padding: 20px 24px;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.25),
+    inset 0 3px 0 rgba(255, 255, 255, 0.6);
+  animation: pulse-challenge 2s ease-in-out infinite;
+}
+
+.challenge-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.challenge-title::before {
+  content: "🏆 ";
+}
+
+.challenger-name {
+  color: #ff3366;
+  font-weight: 800;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.score-text,
+.distance-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d2d44;
+}
+
+.score-text::before {
+  content: "⭐ ";
+}
+
+.distance-text::before {
+  content: "📏 ";
+}
+
+.start-button {
+  background-image: url('../playButtonDefault.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  height: 100px;
+  transition: transform 150ms ease;
+  position: relative;
+  font-size: 0;
+  padding: 0;
+  animation: pulse-button-subtle 2s ease-in-out infinite;
+}
+
+body.has-challenge .start-button {
+  width: 340px;
+  height: 115px;
+}
+
+.start-button::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  background-image: url('../playButtonHover.png');
+}
+
+.start-button:hover {
+  background-image: url('../playButtonHover.png');
+  transform: scale(1.05);
+}
+
+.start-button:active {
+  transform: scale(0.98);
+}
+
+.start-button:focus-visible {
+  outline: 4px solid #00ff88;
+  outline-offset: 4px;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-button {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes pulse-button-subtle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes pulse-challenge {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.008);
+  }
+}
+
+@keyframes title-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes logo-shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: rotate(-1.5deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: rotate(1.5deg);
+  }
+}
+
+.snowflake {
+  position: fixed;
+  color: #a8e6ff;
+  font-size: 20px;
+  pointer-events: none;
+  z-index: 100;
+  animation:
+    snowfall-opacity var(--duration, 1.8s) ease-out forwards,
+    snowfall-transform var(--duration, 1.8s) ease-out forwards;
+  opacity: 1;
+}
+
+@keyframes snowfall-opacity {
+  0%, 70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes snowfall-transform {
+  0% {
+    transform: translateY(0) rotate(var(--start-rotation, 0deg));
+  }
+  100% {
+    transform: translateY(var(--distance, 60px)) rotate(var(--end-rotation, 180deg));
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 32px 24px;
+    border-radius: 24px;
+  }
+
+  .challenge-container {
+    padding: 16px 20px;
+  }
+
+  .start-button {
+    font-size: 0;
+  }
+}
+
+@media (orientation: landscape) {
+  body.has-challenge .start-button {
+    width: 400px;
+    height: 130px;
+  }
+
+  body.no-challenge .start-button {
+    width: 280px;
+    height: 90px;
+  }
+}
+
+@media (orientation: portrait) {
+  .title {
+    width: clamp(220px, 60%, 400px);
+  }
+
+  .start-button {
+    width: 240px;
+    height: 80px;
+  }
+
+  body.has-challenge .start-button {
+    width: 270px;
+    height: 92px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content,
+  .start-button,
+  .title,
+  .challenge-container {
+    animation: none;
+  }
+
+  .start-button {
+    transition: none;
+  }
+}

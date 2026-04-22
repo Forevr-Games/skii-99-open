@@ -1,0 +1,52 @@
+Asset License – Game Use Only (No Standalone Redistribution)
+Copyright (c) 2026 ForeVR Games
+
+1. Definitions
+
+"Assets" means all art, audio, models, textures, animations, and other non-code content provided in this repository.
+"Project" means a game or interactive application (including commercial products) that incorporates the Assets as part of a larger work.
+"Standalone Assets" means the Assets distributed in a form where they can be extracted, accessed, or reused as assets (e.g., source files, asset packs, or easily extractable formats).
+"Compiled/Packaged Form" means a format in which the Assets are incorporated into a Project build such that they are not provided as source files and are not readily accessible for extraction or reuse (e.g., bundled, baked, encrypted, or otherwise transformed as part of a build process).
+
+2. License Grant
+
+You are granted a non-exclusive, worldwide, royalty-free license to:
+
+- Use, reproduce, and modify the Assets;
+- Include the Assets in a Project;
+- Distribute and sell Projects that include the Assets, including for commercial purposes.
+
+3. Distribution Conditions
+
+You may distribute the Assets only as embedded components of a Project in Compiled/Packaged Form, and not as Standalone Assets.
+
+You must take reasonable steps to ensure the Assets:
+
+- are not the primary value of the distributed Project; and
+- are not readily extractable in their original or source format.
+
+4. Restrictions
+
+You may NOT:
+
+- Distribute the Assets in source format under any circumstances;
+- Sell, sublicense, rent, lease, or distribute the Assets as Standalone Assets;
+- Include the Assets in any asset pack, template, or library intended for reuse;
+- Redistribute the Assets outside of a Project;
+- Use the Assets in a way that allows third parties to extract and reuse them as assets.
+
+5. Attribution
+
+Attribution is not required.
+
+6. Ownership
+
+All rights, title, and interest in the Assets remain with ForeVR Games. This license grants usage rights only and does not transfer ownership.
+
+7. Disclaimer
+
+The Assets are provided "as is", without warranty of any kind, express or implied, including but not limited to merchantability or fitness for a particular purpose. In no event shall ForeVR Games be liable for any claim, damages, or other liability arising from use of the Assets.
+
+8. Termination
+
+This license terminates automatically if you violate its terms. Upon termination, you must cease use and distribution of the Assets.

@@ -1,0 +1,119 @@
+.main-menu-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    flex-grow: 1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    picking-mode: Ignore;
+}
+
+.content-panel {
+    width: 80%;
+    padding: 5% 5%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-image {
+    width: 70%;
+    height: 100%;
+    max-width: 400px;
+    min-height: 80px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    background-image: url("project://database/Assets/UI/logo.png?fileID=2800000&guid=b1141526a3a822444b1236973dbd8e97&type=3#logo");
+    background-size: contain;
+    background-position-y: top 0;
+    max-height: 150px;
+}
+
+.buttons-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-button {
+    width: 80%;
+    height: 100px;
+    font-size: 38px;
+    color: white;
+    background-color: rgb(50, 150, 255);
+    border-width: 0;
+    border-radius: 15px;
+    -unity-font-style: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-button:hover {
+}
+
+.menu-button:active {
+}
+
+.zen-button:hover {
+    background-image: url("project://database/Assets/UI/zenButtonHover.png?fileID=2800000&guid=fd89e71df08e64343baf4336929bcb01&type=3#zenButtonHover");
+}
+
+.zen-button:active {
+    scale: 0.95;
+}
+
+.play-button:hover {
+    background-image: url("project://database/Assets/UI/playButtonHover.png?fileID=2800000&guid=777913e3bf112e44a9b296e9d1f318a2&type=3#playButtonHover");
+}
+
+.play-button:active {
+    scale: 0.95;
+}
+
+.play-button {
+    font-size: 20%;
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    -unity-font-style: bold;
+    background-image: url("project://database/Assets/UI/playButtonDefault.png?fileID=2800000&guid=b4d47fa7cc93c834c8ab0a7ea9046a33&type=3#playButtonDefault");
+    background-color: rgba(50, 150, 255, 0);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.zen-button {
+    font-size: 15%;
+    height: 50%;
+    width: 100%;
+    background-image: url("project://database/Assets/UI/zenButtonDefault.png?fileID=2800000&guid=ab1043258f9139749845985c91a4afc0&type=3#zenButtonDefault");
+    background-size: contain;
+    background-color: rgba(150, 100, 255, 0);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}

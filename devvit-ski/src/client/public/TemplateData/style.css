@@ -1,0 +1,40 @@
+body { padding: 0; margin: 0; overflow: hidden; }
+
+#splash-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: url('splash-background.jpg'); background-size: cover; background-attachment: fixed; background-position: center; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 1000; opacity: 0; pointer-events: auto; }
+
+#splash-overlay.show { animation: fadeInOverlay 1s ease-out forwards; }
+
+#splash-overlay.fade-out { animation: fadeOutOverlay 0.6s ease-out forwards; }
+
+@keyframes fadeInOverlay { from { opacity: 0; } to { opacity: 1; } }
+
+@keyframes fadeOutOverlay { from { opacity: 1; } to { opacity: 0; } }
+
+#splash-controls { position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(10px, 3vh, 30px); left: 0; right: 0; margin-left: auto; margin-right: auto; width: clamp(150px, 30vw, 300px); bottom: max(15vh, 25%); }
+
+@media (orientation: landscape) {
+  #splash-controls { bottom: max(5vh, 10%); }
+}
+
+#tap-to-start { position: static; display: none; animation: pulsate 2s ease-in-out infinite; width: 100%; height: auto; }
+
+#tap-to-start.show { display: block; }
+
+@keyframes pulsate { 0%, 100% { opacity: 0.6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.05); } }
+
+#unity-container { position: absolute }
+#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+#unity-container.unity-mobile { position: fixed; width: 100%; height: 100% }
+#unity-canvas { background: transparent }
+.unity-mobile #unity-canvas { width: 100%; height: 100% }
+#unity-loading-bar { position: static; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 100; }
+
+#unity-progress-bar-container { position: relative; width: clamp(150px, 25vw, 300px); height: clamp(12px, 2vh, 24px); border-radius: clamp(4px, 1vh, 12px); border: clamp(2px, 0.3vh, 4px) solid #02104c; background-color: #0a2c86; }
+
+#unity-progress-bar-full-container { position: absolute; top: 0; left: 0; width: 0%; height: 100%; overflow: hidden; background-color: #5ca3d1; border-radius: clamp(2px, 0.8vh, 8px); }
+#unity-footer { position: relative }
+.unity-mobile #unity-footer { display: none }
+#unity-logo-title-footer { float:left; width: 102px; height: 38px; background: url('unity-logo-title-footer.png') no-repeat center }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
+#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }

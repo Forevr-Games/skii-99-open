@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/SkiMainMenu.uss?fileID=7433441132597879392&amp;guid=aca5790d8ed5ef548bb2cd7e6372c158&amp;type=3#SkiMainMenu" />
+    <ui:VisualElement name="main-menu-container" class="main-menu-container" style="-unity-background-image-tint-color: rgb(255, 255, 255); top: 0; left: 2px; justify-content: space-between;">
+        <ui:VisualElement name="buttons-container" class="buttons-container" style="width: 90%; align-items: center; height: 25%; position: absolute; top: auto; bottom: 1px; max-height: 200px; min-height: 60px; justify-content: flex-end; margin-bottom: 10px;">
+            <ui:VisualElement name="challenge-container" style="flex-grow: 1; position: absolute; top: -45px; height: 40px; font-size: 12px; -unity-text-align: middle-center; background-color: rgb(82, 192, 226); border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px; padding-top: 4px; padding-right: 6px; padding-bottom: 4px; padding-left: 6px; -unity-font-style: bold; color: rgb(255, 255, 255);">
+                <ui:Label text="Challege by {user}&#10;Score: {score} - Distance: {distance}" name="challenge-label" />
+            </ui:VisualElement>
+            <ui:Button name="play-button" enable-rich-text="false" emoji-fallback-support="false" class="menu-button play-button" />
+            <ui:Button name="zen-mode-button" enable-rich-text="false" emoji-fallback-support="false" class="menu-button zen-button" />
+        </ui:VisualElement>
+        <ui:Image name="title-image" class="title-image" />
+    </ui:VisualElement>
+</ui:UXML>

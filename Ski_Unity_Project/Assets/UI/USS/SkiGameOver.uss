@@ -1,0 +1,312 @@
+.game-over-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+}
+
+.game-over-container-visible {
+    display: flex;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    picking-mode: Ignore;
+}
+
+.content-panel {
+    width: 80%;
+    padding: 5% 5%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(50, 50, 50);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-label {
+    font-size: 80px;
+    color: rgb(220, 50, 50);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.new-record-label {
+    font-size: 60px;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+}
+
+.new-record-label-visible {
+    display: flex;
+}
+
+.score-section {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.1);
+    border-radius: 15px;
+}
+
+.section-header {
+    font-size: 32px;
+    color: rgb(100, 100, 100);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.score-value {
+    font-size: 96px;
+    color: rgb(50, 150, 255);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.records-section {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgba(255, 215, 0, 0.1);
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+.records-header {
+    font-size: 28px;
+    color: rgb(200, 150, 0);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.record-row {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    background-color: rgba(255, 215, 0, 0.05);
+    border-radius: 8px;
+}
+
+.record-label {
+    font-size: 32px;
+    color: rgb(150, 120, 0);
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+}
+
+.record-value {
+    font-size: 36px;
+    color: rgb(200, 150, 0);
+    -unity-text-align: middle-right;
+    -unity-font-style: bold;
+}
+
+.stats-section {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.stat-row {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    background-color: rgba(50, 50, 50, 0.05);
+    border-radius: 10px;
+}
+
+.stat-label {
+    font-size: 36px;
+    color: rgb(80, 80, 80);
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+}
+
+.stat-value {
+    font-size: 40px;
+    color: rgb(50, 50, 50);
+    -unity-text-align: middle-right;
+    -unity-font-style: bold;
+}
+
+.retry-button {
+    color: white;
+    background-color: rgb(50, 150, 255);
+    border-width: 0;
+    border-radius: 15px;
+    -unity-font-style: bold;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    -unity-text-generator: advanced;
+    -unity-text-auto-size: best-fit 14px 100px;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.retry-button:hover {
+    background-color: rgb(70, 170, 255);
+}
+
+.retry-button:active {
+    background-color: rgb(30, 130, 235);
+    scale: 0.95;
+}
+
+.share-notif-cont {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.share-confirm-popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.share-confirm-panel {
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 16px;
+    border-width: 3px;
+    border-color: rgb(50, 50, 50);
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    width: 85%;
+    max-width: 420px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.share-confirm-message {
+    font-size: 22px;
+    color: rgb(50, 50, 50);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 20px;
+    white-space: normal;
+}
+
+.share-confirm-buttons {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.share-confirm-yes-button {
+    background-color: rgb(46, 180, 90);
+    color: white;
+    flex-grow: 1;
+    border-width: 0;
+    border-radius: 12px;
+    -unity-font-style: bold;
+    margin-right: 8px;
+    -unity-text-auto-size: best-fit 14px 28px;
+    -unity-text-generator: advanced;
+    height: 52px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.share-confirm-yes-button:hover {
+    background-color: rgb(66, 200, 110);
+}
+
+.share-confirm-yes-button:active {
+    background-color: rgb(30, 160, 70);
+    scale: 0.95;
+}
+
+.share-confirm-no-button {
+    background-color: rgb(220, 60, 50);
+    color: white;
+    flex-grow: 1;
+    border-width: 0;
+    border-radius: 12px;
+    -unity-font-style: bold;
+    margin-left: 8px;
+    -unity-text-auto-size: best-fit 14px 28px;
+    -unity-text-generator: advanced;
+    height: 52px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.share-confirm-no-button:hover {
+    background-color: rgb(240, 80, 70);
+}
+
+.share-confirm-no-button:active {
+    background-color: rgb(200, 40, 30);
+    scale: 0.95;
+}
+
+.share-notif {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    transition-property: top;
+    top: -110%;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    -unity-text-align: middle-center;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    -unity-text-auto-size: best-fit 10px 100px;
+    -unity-text-generator: advanced;
+    flex-grow: 1;
+}

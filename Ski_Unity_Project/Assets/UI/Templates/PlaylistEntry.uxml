@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="playlist-entry" class="playlist-entry">
+        <ui:Label name="playlist-title" text="Playlist Name" class="text-subtitle playlist-title" />
+        <ui:VisualElement name="level-buttons" class="level-buttons-container flex-row" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c8c699e35b7c0459d0e60d2a09edc0, type: 3}
+  m_Name: SoundPresets
+  m_EditorClassIdentifier: Assembly-CSharp::ChunkyBall.Audio.ProceduralSoundPresets
+  presets:
+  - name: Landing
+    category: Landing
+    parameters:
+      waveform: 4
+      baseFrequency: 95.47829
+      frequencySlide: -9.100367
+      frequencyDeltaSlide: 0
+      attackTime: 0.0011108504
+      decayTime: 0.25474352
+      sustainLevel: 0.3453527
+      releaseTime: 0.22164334
+      duration: 0.63
+      vibratoRate: 0
+      vibratoDepth: 0
+      vibratoDelay: 0
+      tremoloRate: 5.453507
+      tremoloDepth: 0.29101703
+      bitCrush: 4.491418
+      volume: 0.1
+  - name: Hit
+    category: Hit
+    parameters:
+      waveform: 1
+      baseFrequency: 83.19202
+      frequencySlide: -161.23045
+      frequencyDeltaSlide: 0
+      attackTime: 0.009471027
+      decayTime: 0.14712211
+      sustainLevel: 0.14857
+      releaseTime: 0.1778147
+      duration: 0.24503344
+      vibratoRate: 0
+      vibratoDepth: 0
+      vibratoDelay: 0
+      tremoloRate: 0
+      tremoloDepth: 0
+      bitCrush: 2.19505
+      volume: 0.25
+  - name: SkiLoop
+    category: Swoosh
+    parameters:
+      waveform: 4
+      baseFrequency: 619.3466
+      frequencySlide: -3.4055061
+      frequencyDeltaSlide: 0
+      attackTime: 0
+      decayTime: 0
+      sustainLevel: 0.30056193
+      releaseTime: 0
+      duration: 2.8141673
+      vibratoRate: 0
+      vibratoDepth: 0.0028614642
+      vibratoDelay: 0
+      tremoloRate: 3.7
+      tremoloDepth: 0.107
+      bitCrush: 3.42
+      volume: 0.05
+  - name: NearMiss
+    category: Swoosh
+    parameters:
+      waveform: 4
+      baseFrequency: 776.365
+      frequencySlide: 529.78174
+      frequencyDeltaSlide: 0
+      attackTime: 0.025827397
+      decayTime: 0.071453124
+      sustainLevel: 0.44783285
+      releaseTime: 0.16437429
+      duration: 0.4923544
+      vibratoRate: 0
+      vibratoDepth: 0.0028614642
+      vibratoDelay: 0
+      tremoloRate: 8.745684
+      tremoloDepth: 0.45574898
+      bitCrush: 3.42
+      volume: 0.15
+  - name: Jump
+    category: Jump
+    parameters:
+      waveform: 1
+      baseFrequency: 371.2387
+      frequencySlide: 733.8682
+      frequencyDeltaSlide: 0
+      attackTime: 0.032388613
+      decayTime: 0.13777271
+      sustainLevel: 0.66887814
+      releaseTime: 0.16957526
+      duration: 0.29747266
+      vibratoRate: 0
+      vibratoDepth: 0.0028614642
+      vibratoDelay: 0
+      tremoloRate: 8.745684
+      tremoloDepth: 0.45574898
+      bitCrush: 3.42
+      volume: 0.2
+  - name: SkiTurn
+    category: Swoosh
+    parameters:
+      waveform: 4
+      baseFrequency: 519.0881
+      frequencySlide: -6.760681
+      frequencyDeltaSlide: 0
+      attackTime: 0.043297525
+      decayTime: 0.108338036
+      sustainLevel: 0.37910533
+      releaseTime: 0.1930089
+      duration: 0.53
+      vibratoRate: 0
+      vibratoDepth: 0.0028614642
+      vibratoDelay: 0
+      tremoloRate: 8.1
+      tremoloDepth: 0.22152762
+      bitCrush: 3.42
+      volume: 0.05
+  - name: ComboEndSm
+    category: Jump
+    parameters:
+      waveform: 3
+      baseFrequency: 520.9574
+      frequencySlide: 554.8918
+      frequencyDeltaSlide: 0
+      attackTime: 0.014616389
+      decayTime: 0.07915631
+      sustainLevel: 0.5111162
+      releaseTime: 0.1509416
+      duration: 0.5
+      vibratoRate: 11.560873
+      vibratoDepth: 0.199495
+      vibratoDelay: 0.065
+      tremoloRate: 2.7290523
+      tremoloDepth: 0.195
+      bitCrush: 6.796915
+      volume: 0.41298762
+  - name: ComboEndMd
+    category: Jump
+    parameters:
+      waveform: 3
+      baseFrequency: 520.9574
+      frequencySlide: 554.8918
+      frequencyDeltaSlide: 0
+      attackTime: 0.014616389
+      decayTime: 0.07915631
+      sustainLevel: 0.5111162
+      releaseTime: 0.1509416
+      duration: 0.75
+      vibratoRate: 11.560873
+      vibratoDepth: 0.199495
+      vibratoDelay: 0.108
+      tremoloRate: 2.7290523
+      tremoloDepth: 0.195
+      bitCrush: 6.796915
+      volume: 0.41298762
+  - name: ComboEndLg
+    category: Jump
+    parameters:
+      waveform: 3
+      baseFrequency: 520.9574
+      frequencySlide: 554.8918
+      frequencyDeltaSlide: 0
+      attackTime: 0.014616389
+      decayTime: 0.07915631
+      sustainLevel: 0.5111162
+      releaseTime: 0.1509416
+      duration: 1
+      vibratoRate: 11.560873
+      vibratoDepth: 0.199495
+      vibratoDelay: 0.108
+      tremoloRate: 2.7290523
+      tremoloDepth: 0.195
+      bitCrush: 6.796915
+      volume: 0.41298762
+  - name: EnterSlomo
+    category: Swoosh
+    parameters:
+      waveform: 0
+      baseFrequency: 200
+      frequencySlide: -200
+      frequencyDeltaSlide: 0
+      attackTime: 0.4
+      decayTime: 0.1
+      sustainLevel: 0.9
+      releaseTime: 0.8
+      duration: 2.5
+      vibratoRate: 1
+      vibratoDepth: 0.3
+      vibratoDelay: 0
+      tremoloRate: 0.7
+      tremoloDepth: 0.5
+      bitCrush: 0
+      volume: 0.3
+  - name: SlomoLoop
+    category: Swoosh
+    parameters:
+      waveform: 0
+      baseFrequency: 80
+      frequencySlide: 0
+      frequencyDeltaSlide: 0
+      attackTime: 0.3
+      decayTime: 0.1
+      sustainLevel: 0.85
+      releaseTime: 0.3
+      duration: 1
+      vibratoRate: 1
+      vibratoDepth: 0.2
+      vibratoDelay: 0
+      tremoloRate: 1
+      tremoloDepth: 0.6
+      bitCrush: 1
+      volume: 0.4
+  - name: ExitSlomo
+    category: Swoosh
+    parameters:
+      waveform: 0
+      baseFrequency: 80
+      frequencySlide: 200
+      frequencyDeltaSlide: 0
+      attackTime: 0.2
+      decayTime: 0.1
+      sustainLevel: 0.9
+      releaseTime: 0.6
+      duration: 2
+      vibratoRate: 1.2
+      vibratoDepth: 0.25
+      vibratoDelay: 0
+      tremoloRate: 1
+      tremoloDepth: 0.5
+      bitCrush: 0
+      volume: 0.3
+  - name: UIClick
+    category: UIClick
+    parameters:
+      waveform: 0
+      baseFrequency: 856.4608
+      frequencySlide: -165.83691
+      frequencyDeltaSlide: 0
+      attackTime: 0.00220871
+      decayTime: 0.013001182
+      sustainLevel: 0.19678189
+      releaseTime: 0.035434492
+      duration: 0.078986876
+      vibratoRate: 11.560873
+      vibratoDepth: 0.199495
+      vibratoDelay: 0.108
+      tremoloRate: 2.7290523
+      tremoloDepth: 0.195
+      bitCrush: 6.796915
+      volume: 0.42373368
+  - name: UIClick_1
+    category: UIClick
+    parameters:
+      waveform: 4
+      baseFrequency: 519.0881
+      frequencySlide: -6.760681
+      frequencyDeltaSlide: 0
+      attackTime: 0.043297525
+      decayTime: 0.108338036
+      sustainLevel: 0.37910533
+      releaseTime: 0.1930089
+      duration: 0.53
+      vibratoRate: 0
+      vibratoDepth: 0.0028614642
+      vibratoDelay: 0
+      tremoloRate: 8.1
+      tremoloDepth: 0.22152762
+      bitCrush: 3.42
+      volume: 0.1

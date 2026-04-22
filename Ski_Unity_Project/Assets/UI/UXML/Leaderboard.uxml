@@ -1,0 +1,85 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/Leaderboard.uss?fileID=7433441132597879392&amp;guid=9aa1e72bd883b03489eb282662b14e29&amp;type=3#Leaderboard" />
+    <ui:VisualElement name="leaderboard-container" class="leaderboard">
+        <ui:Label name="leaderboard-title" class="leaderboard__title" />
+        <ui:VisualElement name="leaderboard-content" class="leaderboard__content">
+            <ui:VisualElement name="leaderboard-entries" class="leaderboard__entries">
+                <ui:VisualElement class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name" style="justify-content: center;">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+                <ui:VisualElement class="leaderboard-entry" style="margin-bottom: 0; padding-bottom: 0; justify-content: space-between;">
+                    <ui:VisualElement class="rank-and-name">
+                        <ui:Label text="1." class="leaderboard-rank" style="margin-right: 0; padding-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; padding-left: 0; width: 10%; font-size: 10px; min-width: 10px;" />
+                        <ui:Label text="SnowShredder" class="leaderboard-name" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 4px; font-size: 8px; max-width: none; flex-grow: 1; align-items: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:Label text="100,000" class="leaderboard-score" style="font-size: 10px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: auto; max-width: none; -unity-font-style: bold;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="user-rank-container" class="leaderboard__user-rank">
+            <ui:Label text="-" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+            <ui:Label text="YourUsername" style="margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 10px; flex-grow: 1; flex-shrink: 1; -unity-text-align: upper-center;" />
+            <ui:Label text="0" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: upper-right;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

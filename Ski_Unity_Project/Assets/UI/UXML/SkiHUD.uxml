@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/SkiHUD.uss?fileID=7433441132597879392&amp;guid=4853d182d4c8fda4ca0eb2c66e962a60&amp;type=3#SkiHUD" />
+    <ui:VisualElement name="hud-container" class="hud-container" style="margin-top: 20px;">
+        <ui:VisualElement style="flex-direction: row; justify-content: space-between; color: rgb(255, 255, 255); font-size: 20px; -unity-font-style: bold;">
+            <ui:VisualElement style="background-image: url(&quot;project://database/Assets/UI/score.png?fileID=2800000&amp;guid=679089f9e46c5d7499d025cab6244ff5&amp;type=3#score&quot;); background-size: contain; background-position-x: left 0; flex-grow: 1; height: 30px; background-position-y: center; width: 50%; margin-left: -5px; -unity-slice-type: tiled;" />
+            <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/speed.png?fileID=2800000&amp;guid=1000b4644c69f984c93665f3d29a5428&amp;type=3#speed&quot;); background-size: contain; background-position-x: right 0; width: 50%; height: 30px; margin-right: -5px; background-position-y: center;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; width: 100%; justify-content: space-between; color: rgb(255, 255, 255); font-size: 20px; -unity-font-style: bold; margin-top: 5px;">
+            <ui:Label name="score-label" text="000000" class="score-label" style="-unity-font-style: bold; font-size: 30px; -unity-text-outline-width: 0.5px; -unity-text-outline-color: rgb(0, 17, 96); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 12px; text-shadow: 0 1px 20px rgb(0, 17, 96); letter-spacing: 0.5px;" />
+            <ui:Label name="speed-label" text="50" class="speed-label" style="padding-top: 0; padding-right: 10px; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; font-size: 30px; -unity-text-outline-width: 0.5px; -unity-text-outline-color: rgb(96, 35, 0); text-shadow: 0 1px 20px rgb(96, 44, 0); letter-spacing: 0.5px; color: rgb(255, 184, 0);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="combo-container" class="combo-container">
+        <ui:Label name="combo-text" text="Text Goes HEre&#10;" class="combo-text" style="margin-top: 0; margin-right: 0; margin-bottom: 5px; margin-left: 0;" />
+        <ui:Label name="combo-multiplier" text="333" class="combo-multiplier" style="margin-top: 5px; margin-right: 0; margin-bottom: 5px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        <ui:VisualElement name="combo-timer-container" class="combo-timer-container">
+            <ui:VisualElement name="combo-timer-bar" class="combo-timer-bar" style="background-color: rgb(131, 249, 62);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

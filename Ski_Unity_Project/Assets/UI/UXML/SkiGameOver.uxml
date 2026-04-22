@@ -1,0 +1,61 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/SkiGameOver.uss?fileID=7433441132597879392&amp;guid=633e058db694291469e40951ae4160e5&amp;type=3#SkiGameOver" />
+    <ui:VisualElement name="game-over-container" class="game-over-container-visible game-over-container">
+        <ui:VisualElement name="overlay" class="overlay" style="display: flex;" />
+        <ui:VisualElement name="content-panel" class="content-panel" style="width: 90%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; margin-top: 5%; margin-right: 0%; margin-bottom: 5%; margin-left: 0%; max-width: 500px; height: 90%; max-height: 800px; display: flex;">
+            <ui:Label name="title-label" text="WIPEOUT!" class="title-label" style="font-size: 40px; margin-bottom: 8px; white-space: nowrap; margin-top: 8px;" />
+            <ui:Label name="new-record-label" text="NEW RECORD!" class="new-record-label" style="display: none; font-size: 19px; margin-bottom: 4px; margin-top: 4px; padding-bottom: 0; padding-top: 0;" />
+            <ui:VisualElement name="records-section" class="records-section" style="padding-top: 12px; height: auto; margin-bottom: 5px; width: 90%; padding-left: 12px; padding-right: 12px; padding-bottom: 12px;">
+                <ui:Label name="records-header" text="Records" class="records-header" style="font-size: 18px; margin-top: 0; margin-bottom: 8px;" />
+                <ui:VisualElement name="record-row" class="record-row" style="margin-bottom: 0; padding-top: 0;">
+                    <ui:Label name="high-score-label" text="High Score:" class="record-label" style="font-size: 16px;" />
+                    <ui:Label name="high-score-value" text="---" class="record-value" style="font-size: 16px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="record-row" class="record-row">
+                    <ui:Label name="high-distance-label" text="Distance&#10;" class="record-label" style="font-size: 16px;" />
+                    <ui:Label name="high-distance-value" text="---" class="record-value" style="font-size: 16px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="score-section" class="score-section" style="height: auto; margin-bottom: 0; padding-top: 20px; padding-right: 30px; padding-bottom: 20px; padding-left: 30px; margin-top: 10px; margin-right: 0; margin-left: 0; width: 90%; -unity-text-align: middle-center;">
+                <ui:Label name="final-score-label" text="FINAL SCORE" class="section-header" style="font-size: 20px; -unity-text-align: middle-center;" />
+                <ui:Label name="score-value" text="0" class="score-value" style="font-size: 30px; white-space: normal;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stats-section" class="stats-section" style="margin-top: 0; padding-top: 20px; width: 90%; margin-bottom: 0;">
+                <ui:VisualElement name="stat-row" class="stat-row">
+                    <ui:Label name="distance-label" text="Distance:" class="stat-label" style="font-size: 16px;" />
+                    <ui:Label name="distance-value" text="0m" class="stat-value" style="font-size: 16px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="stat-row" class="stat-row" style="font-size: 15%;">
+                    <ui:Label name="tricks-label" text="Trick Points:" class="stat-label" style="font-size: 16px;" />
+                    <ui:Label name="tricks-value" text="0" class="stat-value" style="font-size: 16px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-shrink: 0; margin-top: 16px; flex-direction: row; justify-content: center; width: 100%; padding-top: 0; padding-right: 20px; padding-bottom: 0; padding-left: 20px; height: 60px;">
+                <ui:Button name="retry-button" text="RETRY" class="retry-button" />
+                <ui:Button name="main-menu-button" text="MENU" class="retry-button" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-shrink: 0; margin-top: 16px; flex-direction: column; justify-content: center; width: 100%; padding-top: 0; padding-right: 20px; padding-bottom: 0; padding-left: 20px; height: 60px; align-items: center;">
+                <ui:Button name="share-button" text="SHARE" class="retry-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="share-notif-cont">
+            <ui:VisualElement name="share-notification-success" class="share-notif" style="background-color: rgb(79, 212, 138);">
+                <ui:Label text="Post Shared Successfully" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="share-notif-cont">
+            <ui:VisualElement name="share-notification-fail" class="share-notif" style="background-color: rgb(253, 121, 99);">
+                <ui:Label text="Post Sharing Failed" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="share-confirm-popup" class="share-confirm-popup">
+            <ui:VisualElement name="share-confirm-panel" class="share-confirm-panel">
+                <ui:Label name="share-confirm-message" text="Create a post challenging other users ski?" class="share-confirm-message" />
+                <ui:VisualElement class="share-confirm-buttons">
+                    <ui:Button name="share-confirm-yes" text="YES!" class="share-confirm-yes-button" />
+                    <ui:Button name="share-confirm-no" text="No" class="share-confirm-no-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -348,46 +348,10 @@ public class SaveDataManager : MonoBehaviour
       }
 
       Debug.Log($"[SaveDataManager] Challenge post created: {postUrl}");
-
-      // After creating the post, add a stickied comment (as the app) with the
-      // score formatted for challengers to reply to. This creates a thread like:
-      //   [App comment] Score: 1234 | Distance: 567m
-      //     └── [Challenger] I scored 1500! Beat it!
-      string newPostId = ExtractPostIdFromUrl(postUrl);
-      if (!string.IsNullOrEmpty(newPostId))
-      {
-        string stickyText = $"Score: {Mathf.RoundToInt(score)} | Distance: {Mathf.RoundToInt(distance)}m";
-        SubmitCommentRequest stickyRequest = new SubmitCommentRequest
-        {
-          replyToId = newPostId,
-          text = stickyText,
-          asUser = false    // Sticky comment is posted by the app account
-        };
-        devvitService.SubmitComment(stickyRequest, (stickyResp) =>
-        {
-          if (stickyResp.success)
-            Debug.Log($"[SaveDataManager] Sticky comment created: {stickyResp.commentUrl}");
-          else
-            Debug.LogWarning("[SaveDataManager] Failed to create sticky comment");
-          onComplete?.Invoke(true, postUrl);
-        });
-      }
-      else
-      {
-        onComplete?.Invoke(true, postUrl);
-      }
+      // The server creates the pinned comment and stores its ID in Redis.
+      // Challengers will receive it via /api/init when they open this post.
+      onComplete?.Invoke(true, postUrl);
     });
-  }
-
-  /// <summary>
-  /// Extracts the post ID from a Reddit post URL.
-  /// e.g. "https://reddit.com/r/sub/comments/abc123/..." → "abc123"
-  /// </summary>
-  private string ExtractPostIdFromUrl(string url)
-  {
-    string[] parts = url.Split('/');
-    int idx = System.Array.IndexOf(parts, "comments");
-    return (idx >= 0 && idx + 1 < parts.Length) ? parts[idx + 1] : string.Empty;
   }
 
   /// <summary>

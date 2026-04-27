@@ -262,7 +262,7 @@ public class SkiGameOverScreen : MonoBehaviour
         if (shareConfirmMessage != null)
             shareConfirmMessage.text = isChallenge
                 ? "Comment your score on post?"
-                : "Create a post challenging other users to ski?";
+                : "Make Challenge Post?";
 
         shareConfirmPopup.style.display = DisplayStyle.Flex;
     }

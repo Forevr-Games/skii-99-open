@@ -37,6 +37,11 @@ export type DevvitInitData = {
    * carry the original player's score to challengers. Undefined for standard posts.
    */
   rawPostData?: string;
+  /**
+   * The ID of the stickied comment on a challenge post. Challengers reply to
+   * this comment to keep all scores threaded together. Undefined for standard posts.
+   */
+  stickyCommentId?: string;
 };
 
 // =============================================================================

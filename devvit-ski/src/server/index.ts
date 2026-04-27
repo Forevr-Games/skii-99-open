@@ -127,6 +127,12 @@ router.get<{ postId: string; }, DevvitInitData | { status: string; message: stri
         response.rawPostData = postDataJson;
       }
 
+      // Return the sticky comment ID so challengers reply to it instead of the post.
+      const stickyCommentId = await redis.get(`sticky:${postId}`);
+      if (stickyCommentId) {
+        response.stickyCommentId = stickyCommentId;
+      }
+
       console.log(`[/api/init] Initialized for user: ${currentUsername}, postId: ${postId}`);
       res.json(response);
     } catch (error) {
@@ -554,9 +560,27 @@ router.post<
 
     console.log(`[/api/create-custom-post] Post created: ${postUrl}`);
 
+    // Create a pinned comment as APP so challengers have a single thread to reply to.
+    // Store the comment ID in Redis so /api/init can return it to future visitors.
+    let stickyCommentId: string | undefined;
+    try {
+      const stickyComment = await submitComment(
+        `⛷️ Challenge accepted? Reply here with your best run!`,
+        post.id,
+        false  // asUser=false → posted as APP account
+      );
+      try { await (stickyComment as any).distinguish(true); } catch (_) {}
+      await redis.set(`sticky:${post.id}`, stickyComment.id);
+      stickyCommentId = stickyComment.id;
+      console.log(`[/api/create-custom-post] Sticky comment created: ${stickyComment.id}`);
+    } catch (stickyError) {
+      console.warn(`[/api/create-custom-post] Failed to create sticky comment:`, stickyError);
+    }
+
     res.json({
       success: true,
       postUrl: postUrl,
+      ...(stickyCommentId ? { stickyCommentId } : {}),
     });
   } catch (error) {
     console.error('[/api/create-custom-post] Error:', error);

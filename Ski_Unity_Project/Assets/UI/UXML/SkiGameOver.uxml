@@ -52,8 +52,8 @@
             <ui:VisualElement name="share-confirm-panel" class="share-confirm-panel">
                 <ui:Label name="share-confirm-message" text="Create a post challenging other users ski?" class="share-confirm-message" />
                 <ui:VisualElement class="share-confirm-buttons">
-                    <ui:Button name="share-confirm-yes" text="YES!" class="share-confirm-yes-button" />
-                    <ui:Button name="share-confirm-no" text="No" class="share-confirm-no-button" />
+                    <ui:Button name="share-confirm-yes" text="Confirm" class="share-confirm-yes-button" />
+                    <ui:Button name="share-confirm-no" text="Cancel" class="share-confirm-no-button" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
